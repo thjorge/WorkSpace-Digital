@@ -1,0 +1,41 @@
+2017-02-14 10:58:01 DEBUG PropertySingleton:24 - Carregando o arquivo de propriedades
+2017-02-14 10:58:01 TRACE PropertySingleton:31 - Retornando as propriedades
+2017-02-14 10:58:01 TRACE PropertySingleton:31 - Retornando as propriedades
+2017-02-14 10:58:12 DEBUG PropertySingleton:24 - Carregando o arquivo de propriedades
+2017-02-14 10:58:12 TRACE PropertySingleton:31 - Retornando as propriedades
+2017-02-14 10:58:12 TRACE PropertySingleton:31 - Retornando as propriedades
+2017-02-14 10:58:14 DEBUG PropertySingleton:24 - Carregando o arquivo de propriedades
+2017-02-14 10:58:14 TRACE PropertySingleton:31 - Retornando as propriedades
+2017-02-14 10:58:14 TRACE PropertySingleton:31 - Retornando as propriedades
+2017-02-14 11:06:30 DEBUG PropertySingleton:24 - Carregando o arquivo de propriedades
+2017-02-14 11:06:30 TRACE PropertySingleton:31 - Retornando as propriedades
+2017-02-14 11:06:30 DEBUG EstoqueBO:17 - Inserindo produtos
+2017-02-14 11:06:47 DEBUG EstoqueBO:24 - Retornando o produto
+2017-02-14 11:06:52 DEBUG PropertySingleton:24 - Carregando o arquivo de propriedades
+2017-02-14 11:06:52 TRACE PropertySingleton:31 - Retornando as propriedades
+2017-02-14 11:06:52 DEBUG EstoqueBO:17 - Inserindo produtos
+2017-02-14 11:06:58 ERROR EstoqueBO:27 - Produto nullo
+2017-02-14 11:12:15 WARN  TerminalConsulta:24 - Inicio da aplicação
+2017-02-14 11:12:15 DEBUG PropertySingleton:24 - Carregando o arquivo de propriedades
+2017-02-14 11:12:15 TRACE PropertySingleton:31 - Retornando as propriedades
+2017-02-14 11:12:15 DEBUG EstoqueBO:17 - Inserindo produtos
+2017-02-14 11:13:18 WARN  TerminalConsulta:24 - Inicio da aplicação
+2017-02-14 11:13:18 DEBUG PropertySingleton:24 - Carregando o arquivo de propriedades
+2017-02-14 11:13:18 TRACE PropertySingleton:31 - Retornando as propriedades
+2017-02-14 11:13:18 DEBUG EstoqueBO:17 - Inserindo produtos
+2017-02-14 11:13:24 DEBUG EstoqueBO:24 - Retornando o produto
+2017-02-14 11:13:24 INFO  TerminalConsulta:40 - Mostrando o produto
+2017-02-14 11:13:32 WARN  TerminalConsulta:48 - Fim da aplicação
+2017-02-14 11:20:20 WARN  TerminalConsulta:24 - Inicio da aplicação
+2017-02-14 11:20:20 DEBUG PropertySingleton:24 - Carregando o arquivo de propriedades
+2017-02-14 11:20:20 TRACE PropertySingleton:31 - Retornando as propriedades
+2017-02-14 11:20:20 DEBUG EstoqueBO:17 - Inserindo produtos
+2017-02-14 11:20:24 ERROR TerminalConsulta:49 - Valor digitado errado
+2017-02-14 11:20:24 WARN  TerminalConsulta:52 - Fim da aplicação
+2017-02-14 11:20:28 WARN  TerminalConsulta:24 - Inicio da aplicação
+2017-02-14 11:20:28 DEBUG PropertySingleton:24 - Carregando o arquivo de propriedades
+2017-02-14 11:20:28 TRACE PropertySingleton:31 - Retornando as propriedades
+2017-02-14 11:20:28 DEBUG EstoqueBO:17 - Inserindo produtos
+2017-02-14 11:20:34 DEBUG EstoqueBO:24 - Retornando o produto
+2017-02-14 11:20:34 INFO  TerminalConsulta:41 - Mostrando o produto
+2017-02-14 11:20:36 WARN  TerminalConsulta:52 - Fim da aplicação
