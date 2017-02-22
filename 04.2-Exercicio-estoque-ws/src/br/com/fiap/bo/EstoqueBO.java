@@ -1,6 +1,8 @@
 package br.com.fiap.bo;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.axis2.AxisFault;
@@ -28,6 +30,10 @@ public class EstoqueBO {
 		}				
 		log.debug("Retornando o produto");
 		return prod;
+	}
+	
+	public List<ProdutoDTO> listar(){
+		return new ArrayList<>(banco.values());
 	}
 
 }
