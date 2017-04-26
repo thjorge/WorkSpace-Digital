@@ -4,13 +4,13 @@
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<properties>
 			<property name="hibernate.show_sql" value="true"/>
-												<!-- update, validate, create -->
+												<!-- update, validate -->
 			<property name="hibernate.hbm2ddl.auto" value="update"/>
 			<property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
 			<property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
-			<property name="hibernate.default_schema" value="RM76825"/>
-			<property name="javax.persistence.jdbc.user" value="RM76825"/>
-			<property name="javax.persistence.jdbc.password" value="290992"/>
+			<property name="hibernate.default_schema" value="PF0392"/>
+			<property name="javax.persistence.jdbc.user" value="PF0392"/>
+			<property name="javax.persistence.jdbc.password" value="EDF452"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@oracle.fiap.com.br:1521:orcl"/>
 		</properties>	
 	</persistence-unit>	

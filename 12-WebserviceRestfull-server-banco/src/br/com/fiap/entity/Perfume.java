@@ -21,8 +21,6 @@ public class Perfume {
 	private String aroma;
 	
 	private float ml;
-	
-	
 
 	public int getCodigo() {
 		return codigo;

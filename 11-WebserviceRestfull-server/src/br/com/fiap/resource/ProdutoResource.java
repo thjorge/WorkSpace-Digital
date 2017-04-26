@@ -56,17 +56,24 @@ public class ProdutoResource {
 	@PUT
 	@Path("/{id}")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response atuliza(@PathParam("id") int codigo, ProdutoTO produto){
-		bo.atualizar(produto);		
-		return Response.ok().build();				
+	public Response atualizar(@PathParam("id") int codigo, ProdutoTO produto){
+		bo.atualizar(produto);
+		return Response.ok().build();
 	}
+	
 	//Remover
 	@DELETE
 	@Path("/{id}")
-	public void remover(@PathParam("id")int id){
+	public void remover(@PathParam("id") int id){
 		bo.remover(id);
 	}
+	
 }
+
+
+
+
+
 
 
 

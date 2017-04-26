@@ -5,14 +5,14 @@ import br.com.fiap.config.PropertySingleton;
 public class Teste {
 
 	public static void main(String[] args) {
-		//Recuperar uma das propriedades do arquivo
+		//Recuperar uma das propriedades configuradas no arquivo
+		String user = 
+			PropertySingleton.getInstance().getProperty("usuario");
+		System.out.println(user);
 		
-		String user = PropertySingleton.getInstance().getProperty("usuario");
-		
-		String url = PropertySingleton.getInstance().getProperty("url");
-		
-		System.out.println("Seu usuário é: "+user +"\t"+url);
-
+		String banco = 
+			PropertySingleton.getInstance().getProperty("url");
+		System.out.println(banco);
 	}
-
+	
 }

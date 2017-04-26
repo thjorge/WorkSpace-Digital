@@ -22,14 +22,13 @@ import br.com.fiap.dao.PerfumeDAO;
 import br.com.fiap.dao.impl.PerfumeDAOImpl;
 import br.com.fiap.entity.Perfume;
 import br.com.fiap.exception.DBException;
-import br.com.fiap.exception.IdNotFoundException;
 import br.com.fiap.factory.EntityManagerFactorySingleton;
 
 @Path("/perfume")
 public class PerfumeResource {
 
 	private EntityManagerFactory fabrica= EntityManagerFactorySingleton.getInstance();
-
+	
 	// /rest/perfume/{codigo} DELETE
 	@DELETE
 	@Path("/{id}")
@@ -45,7 +44,7 @@ public class PerfumeResource {
 			em.close();
 		}
 	}
-
+	
 	// /rest/perfume/{codigo} PUT
 	@PUT
 	@Path("/{id}")
@@ -60,8 +59,8 @@ public class PerfumeResource {
 		} catch (DBException e) {
 			e.printStackTrace();
 		}
-		return Response.ok().build(); // HTTP Status 200 Ok
-	}	
+		return Response.ok().build(); // HTTP Status 200 ok
+	}
 	
 	// /rest/perfume/{codigo} GET
 	@GET
@@ -74,7 +73,7 @@ public class PerfumeResource {
 		em.close();
 		return perfume;
 	}
-
+	
 	// /rest/perfume GET
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
@@ -85,7 +84,7 @@ public class PerfumeResource {
 		em.close();
 		return lista;
 	}
-
+	
 	// /rest/perfume POST
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
@@ -104,7 +103,7 @@ public class PerfumeResource {
 		url.path(String.valueOf(perfume.getCodigo()));
 		return Response.created(url.build()).build();
 	}
-
+	
 }
 
 
