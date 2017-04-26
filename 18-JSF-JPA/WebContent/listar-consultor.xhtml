@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="_templete.xhtml">
+	<ui:define name="conteudo">
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Lista de Consultores</h2>
+				<h:messages styleClass="alert alert-success"/>
+				<h:dataTable styleClass="table table-striped" var="consultor"
+					value="#{listaConsultorBean.lista}">
+					<h:column>
+						<f:facet name="header">Nome</f:facet>
+						#{consultor.nome}
+				</h:column>
+					<h:column>
+						<f:facet name="header">CPF</f:facet>
+						#{consultor.cpf}
+				</h:column>
+					<h:column>
+						<f:facet name="header">Telefone</f:facet>
+					#{consultor.telefone}
+				</h:column>
+				<h:column>
+					<f:facet name="Ação"></f:facet>
+					
+				</h:column>
+				</h:dataTable>
+			</div>
+		</div>
+	</ui:define>
+</ui:composition>
+</html>

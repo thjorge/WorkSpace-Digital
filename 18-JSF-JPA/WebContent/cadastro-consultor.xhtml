@@ -8,7 +8,10 @@
 	<ui:define name="conteudo">
 		<div class="row">
 			<div class="col-md-6">
-				<h1>Cadastrar Consultor</h1>
+				<h2>Cadastrar Consultor</h2>
+				
+				<h:messages styleClass="alert alert-success" />
+				
 				<h:form>
 					<div class="form-group">
 						<h:outputLabel value="Nome" for="nome" />
@@ -26,7 +29,7 @@
 						id="telefone" styleClass="form-control" />
 					</div>
 					<div class="form-group">
-						<h:commandButton value="Salvar" styleClass="btn btn-primary" action="#{consultorBean.cadastrar()}" />
+						<h:commandButton value="Salvar" styleClass="btn btn-success" action="#{consultorBean.cadastrar()}" />
 					</div>
 				</h:form>
 			</div>
