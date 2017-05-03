@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="_templete.xhtml">
+	<ui:define name="conteudo">
+		<h2>Cadastro Pedidos</h2>
+		<h:messages styleClass="alert alert-success"/>
+		<h:form>			
+			<div>
+				<h:outputLabel value="Data" for="data" />
+				<h:inputText id="data" styleClass="form-control"
+					  value="#{pedidoBean.pedido.data.time}" >
+					<f:convertDateTime pattern="dd/MM/yyyy" />
+				</h:inputText>
+			</div>
+			<div class="form-group">
+				<h:outputLabel value="Valor" for="valor" />
+				<h:inputText value="#{pedidoBean.pedido.valor}" id="valor"
+					styleClass="form-control" />
+			</div>
+			<div class="form-group">
+				<h:outputLabel value="Descricao" for="descricao" />
+				<h:inputText value="#{pedidoBean.pedido.descricao}" id="descricao"
+					styleClass="form-control" />
+			</div>
+			<br />
+			<div class="form-group">
+				<h:commandButton value="Salvar" action="#{pedidoBean.cadastrar()}" 	
+				styleClass="btn btn-success btn-sm" />
+			</div>
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

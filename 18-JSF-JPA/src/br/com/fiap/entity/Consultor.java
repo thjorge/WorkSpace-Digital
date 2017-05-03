@@ -1,10 +1,14 @@
 package br.com.fiap.entity;
 
+import java.util.Calendar;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
@@ -22,7 +26,18 @@ public class Consultor {
 	private String cpf;
 	
 	private String telefone;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Calendar dataAdimissao;
 
+	public Calendar getDataAdimissao(){
+		return dataAdimissao;
+	}
+	
+	public void setDataAdimissao(Calendar dataAdimissao){
+		this.dataAdimissao = dataAdimissao;
+	}
+	
 	public int getCodigo() {
 		return codigo;
 	}
@@ -54,5 +69,7 @@ public class Consultor {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
+	
+	
 	
 }

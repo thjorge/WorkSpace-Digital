@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<ui:composition template="_templete.xhtml">
+	<ui:define name="conteudo">
+		<h2>Pedidos Realizados</h2>
+		<h:dataTable styleClass="table table-striped" var="pedido"
+			value="#{listaPedidoBean.lista}">
+			<h:column>
+				<f:facet name="header">Descrição</f:facet>
+		#{pedido.descricao}
+	</h:column>
+			<h:column>
+				<f:facet name="header">Valor</f:facet>
+		#{pedido.valor}
+	</h:column>
+			<h:column>
+				<f:facet name="header">Data</f:facet>
+				<h:outputText value="#{pedido.data.time}">
+					<f:convertDateTime timeZone="GMT-3" pattern="dd/MM/yyyy" />
+				</h:outputText>
+			</h:column>
+			<h:column>
+				<h:form>
+					<h:commandButton styleClass="btn btn-primary btn-sm" value="Alterar" >
+					<f:setPropertyActionListener value="#{pedido}" target="#{pedidoBean.pedido}" />
+					</h:commandButton>					
+					<h:commandButton styleClass="btn btn-danger btn-sm" action="#{listaPedidoBean)}" value="" />
+				</h:form>
+			</h:column>
+		</h:dataTable>
+	</ui:define>
+</ui:composition>
+</html>

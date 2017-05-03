@@ -1,5 +1,7 @@
 package br.com.fiap.bean;
 
+import java.util.Calendar;
+
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
@@ -18,14 +20,20 @@ public class ConsultorBean {
 	@PostConstruct
 	private void inicializacao(){
 		consultor = new Consultor();
+		consultor.setDataAdimissao(Calendar.getInstance());
 		bo = new ConsultorBO();
 	}
 
 	public String cadastrar(){
 		FacesMessage msg;
 		try {
+		if(consultor.getCodigo() == 0){	
 			bo.cadastrar(consultor);
 			msg = new FacesMessage("Consultor Cadastrado com Sucesso!");
+		}else{
+			bo.atualizar(consultor);
+			msg = new FacesMessage("Consultor" + consultor.getNome()+ " atualizado!!");
+		}		
 		} catch (DBException e) {
 			e.printStackTrace();
 			msg = new FacesMessage("Erro no Cadastro");
